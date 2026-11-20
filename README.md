@@ -25,6 +25,6 @@ classDiagram
     }
 
     Sensor <|.. Adapter : implementa
-    Adapter --> SensorF : adapta
-    Termometro --> Sensor : usa
+    Adapter "0..*" --> "1" SensorF : adapta
+    Termometro "0..*" --> "1" Sensor : usa
 ```
